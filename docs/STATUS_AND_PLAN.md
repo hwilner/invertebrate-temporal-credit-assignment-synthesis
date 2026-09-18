@@ -1,19 +1,21 @@
-# Status and Plan
+# Research Status and Plan
 
-## Current status
+## Answer to the synthesis question
 
-This is an **independent research** staging tree with a deliberately narrow public boundary. It contains conceptual documentation, a small data-free arithmetic utility, and synthetic tests only. It does not contain research data, external source records, empirical findings, figures, or derived outputs.
+A cross-system temporal-credit-assignment conclusion cannot currently be supported. The available source-specific records do not share a prospectively specified bridge that would permit a common numerical benchmark or pooled effect. The synthesis is therefore unresolved rather than positive or negative.
 
-> **Current-status notice:** This note supersedes earlier staging documentation or source comments that could be understood as reporting evidence review, source access, completed analysis, or findings. Those materials are not represented by the current public tree.
+## Completed work
 
-## Near-term maintenance plan
+The project completed a comparability assessment, evidence-coding controls, and a deterministic timing-contrast helper with synthetic tests. It also reviewed the status of the contributing source-specific records: P1 is directionally suggestive but unstable, P2 is inconclusive across reference families, and P3 has one bounded component–motion encoding result alongside a separate non-supportive observational route.
 
-The maintained public work is limited to clarifying conceptual scope, improving data-free code quality, and strengthening synthetic validation and release-boundary checks. Changes should preserve the distinction between a reusable arithmetic example and any empirical interpretation.
+## Successful and non-supportive results
 
-## Scope discipline
+The successful methodological result is a clear boundary: the existing records must remain source-specific. The non-supportive result is the inability to derive a pooled effect, common benchmark, or shared mechanism from those records. The helper validates arithmetic on caller-supplied synthetic sequences; it does not estimate an empirical timing effect.
 
-The repository does not establish a biological mechanism, compare empirical systems, or support an outcome claim. Work requiring data, external materials, or outputs is outside this tree and is described only at a high level in [`DEFERRED_AND_DROPPED_DIRECTIONS.md`](DEFERRED_AND_DROPPED_DIRECTIONS.md).
+## What remains unrun
 
-## Review point
+No external bridge source has been selected, screened, or analysed for the synthesis. No pooled analysis, ranking, cross-system translation, or shared-mechanism test has been performed.
 
-Before expanding the public contents, the owner should confirm that a proposed addition is data-free, free of source-specific metadata, and suitable for an independent research repository. The controlling rules are in [`RELEASE_BOUNDARY.md`](RELEASE_BOUNDARY.md).
+## Next research decision
+
+A future synthesis requires a prospectively specified bridge before source-specific results are inspected. Public contributions are welcome for data-free methods, synthetic tests, documentation, and review of comparability assumptions.

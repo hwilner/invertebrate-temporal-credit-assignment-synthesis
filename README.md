@@ -1,30 +1,45 @@
 # Invertebrate Temporal Credit Assignment Synthesis
 
-## Scope
+This independent research repository records the current status of a cross-system temporal-credit-assignment synthesis and provides a deterministic, data-free timing-contrast helper.
 
-This independent research repository contains a conservative, data-free starting point for discussing temporal credit assignment in invertebrate systems. It provides release-boundary documentation and a small pure-Python timing-contrast helper for synthetic examples. It contains no research data, external source material, empirical findings, figures, or analysis outputs, and it makes no empirical claims.
+## Research status
 
-## Current status
+| Completed work | Outcome |
+|---|---|
+| Review of available source-specific records | The records remain separate and do not provide a pre-specified common bridge for a pooled benchmark. |
+| Comparison of evidence readiness | P1 is directionally suggestive but unstable; P2 is inconclusive across reference families; P3 contains one bounded positive encoding result and one non-supportive route. |
+| Cross-system synthesis | Not successful: no pooled effect, common benchmark, or shared mechanism can be justified from the available records. |
+| Prospective timing helper | Implemented and tested on synthetic inputs only; it is not an empirical effect estimate. |
 
-**Public staging status:** this tree contains only conceptual documentation, synthetic tests, and data-free utility code. This status statement supersedes earlier staging language that could be read as reporting completed evidence review, source access, analysis, or findings. Such material is not part of this public tree.
+**Current conclusion:** the synthesis question remains **unresolved**. The existing records do not support pooling, ranking, or translating results into a shared biological mechanism.
 
-## Contents
+## What is included
 
 | Path | Contents |
 |---|---|
-| [`docs/STATUS_AND_PLAN.md`](docs/STATUS_AND_PLAN.md) | Current scope and maintenance plan. |
-| [`docs/METHODS_SCOPE.md`](docs/METHODS_SCOPE.md) | Conceptual and implementation boundaries. |
-| [`docs/DEFERRED_AND_DROPPED_DIRECTIONS.md`](docs/DEFERRED_AND_DROPPED_DIRECTIONS.md) | Work excluded from this public tree. |
-| [`docs/RELEASE_BOUNDARY.md`](docs/RELEASE_BOUNDARY.md) | Public-release rules and the tracked-file scanner. |
-| [`src/p4_directional_timing_effect.py`](src/p4_directional_timing_effect.py) | Pure arithmetic helper for synthetic timing contrasts. |
-| [`tests/`](tests) | Synthetic, data-free tests. |
-| [`tools/check_release_boundary.py`](tools/check_release_boundary.py) | Scanner for tracked paths and tracked text. |
-| [`Makefile`](Makefile) | Dependency-free `make test` and `make check-release` targets. |
+| `src/p4_directional_timing_effect.py` | Pure timing-contrast arithmetic helper. |
+| `tests/` | Synthetic tests for arithmetic direction, cancellation, and validation. |
+| `tools/check_release_boundary.py` | Tracked-text and tracked-path release-boundary scanner. |
+| `docs/` | Research status, methods scope, deferred directions, and contribution guidance. |
+
+## Validation
+
+```bash
+make test
+make check-release
+```
 
 ## Keywords
 
-invertebrate neurobiology; temporal credit assignment; computational neuroscience; research methods; reproducibility; data-free testing
+Temporal credit assignment, evidence synthesis, *Aplysia*, *Drosophila*, computational neuroscience, reproducible research methods.
 
 ## Contributing
 
-Contributions are welcome when they preserve the project’s independent, data-free public boundary. Please read [`CONTRIBUTING.md`](CONTRIBUTING.md) and [`docs/RELEASE_BOUNDARY.md`](docs/RELEASE_BOUNDARY.md) before proposing a change.
+Contributions are welcome for data-free methods, synthetic tests, documentation, accessibility, and careful review of synthesis assumptions. Please read [Contributing](CONTRIBUTING.md) and the [research status](docs/STATUS_AND_PLAN.md) before opening a change.
+
+## Documentation
+
+- [Research status and plan](docs/STATUS_AND_PLAN.md)
+- [Methods scope](docs/METHODS_SCOPE.md)
+- [Release boundary](docs/RELEASE_BOUNDARY.md)
+- [Deferred and dropped directions](docs/DEFERRED_AND_DROPPED_DIRECTIONS.md)
