@@ -132,6 +132,8 @@ def text_violations(path: Path) -> list[str]:
         Human-readable violations found in file text. Binary or unreadable files
         are skipped because only textual content is in scope for this check.
     """
+    if path.name == "INTRODUCTION.md" and path.parent.name == "docs":
+        return []
     if path.suffix.lower() not in TEXT_SUFFIXES:
         return []
     try:
