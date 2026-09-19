@@ -34,6 +34,8 @@ Keep documentation accurate and conservative. Describe scope, assumptions, and e
 
 From a Git checkout, run the tracked-file boundary scanner and the synthetic standard-library test suite before sharing a change:
 
+The boundary scanner reads Git-tracked content only; it does not validate new or modified material that is still untracked. Stage intended new files before relying on its result.
+
 ```bash
 python3 tools/check_release_boundary.py
 python3 -B -m unittest discover -s tests -v
