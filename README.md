@@ -40,6 +40,7 @@ Contributions are welcome for data-free methods, synthetic tests, documentation,
 ## Documentation
 
 - [Introduction for new readers](docs/INTRODUCTION.md)
+- [Current results and discussion](docs/CURRENT_RESULTS_AND_DISCUSSION.md)
 - [Research status and plan](docs/STATUS_AND_PLAN.md)
 - [Methods scope](docs/METHODS_SCOPE.md)
 - [Release boundary](docs/RELEASE_BOUNDARY.md)

@@ -14,6 +14,22 @@ Retained utilities must be deterministic, data-free, and free of filesystem acce
 
 Keep documentation accurate and conservative. Describe scope, assumptions, and exclusions rather than outcomes. Add public documentation only when it can stand on its own without external source metadata or private research context. Review [`docs/METHODS_SCOPE.md`](docs/METHODS_SCOPE.md) and [`docs/DEFERRED_AND_DROPPED_DIRECTIONS.md`](docs/DEFERRED_AND_DROPPED_DIRECTIONS.md) before expanding scope.
 
+## Future Testing Opportunities
+
+**Data-free software or documentation tests that contributors can work on now**
+
+- Perform a manual contract review of the existing timing helper against `docs/METHODS_SCOPE.md`, checking that its documented inputs, arithmetic, validation, and interpretation remain limited to caller-supplied synthetic sequences. Record proposed wording changes only; do not change runtime code or the test suite.
+- Conduct a plain-language review of the public documentation, checking whether a reader can distinguish the unresolved synthesis status from a negative result and can identify the difference between synthetic arithmetic and empirical evidence.
+- Check the current public documents for consistent use of the comparison boundary: each should avoid implying a pooled effect, common benchmark, ranking, cross-system translation, or shared mechanism.
+- Review the existing synthetic test descriptions and local-check instructions for clarity and reproducibility, proposing documentation-only corrections where a contributor could otherwise mistake a synthetic check for an empirical analysis.
+
+**Research-facing tests requiring maintainer approval and an appropriate data boundary**
+
+- Draft a proposed bridge specification for maintainer review before any candidate material is inspected. It should state the target, comparator, outcome, measurement scale, timing convention, mapping rule, and exclusion rule.
+- After approval and only outside this public repository's data boundary, evaluate whether candidate records meet the approved bridge without changing their original meaning; retain non-comparable cases rather than forcing them into a shared result.
+- After approval and only within an appropriate research boundary, evaluate whether pre-specified alternative bridge choices yield the same qualitative interpretation, with the alternatives and decision rule fixed before review.
+- Before any interpretation is considered, ask whether a proposed benchmark keeps synthetic timing arithmetic separate from empirical inference; require a documented safeguard that the helper is not treated as evidence for a biological mechanism.
+
 ## Local checks
 
 From a Git checkout, run the tracked-file boundary scanner and the synthetic standard-library test suite before sharing a change:
