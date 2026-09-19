@@ -56,6 +56,7 @@ class DirectionalTimingEffectTest(unittest.TestCase):
             ([1.0], [], [1.0], [1.0]),
             ([1.0], [1.0], [], [1.0]),
             ([1.0], [1.0], [1.0], [float("nan")]),
+            ([1.0], ["not-a-number"], [1.0], [1.0]),
         )
         for values in invalid_inputs:
             with self.subTest(values=values):
