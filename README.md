@@ -39,6 +39,8 @@ Contributions are welcome for data-free methods, synthetic tests, documentation,
 
 ## Documentation
 
+- [Extended introduction for non-specialists](docs/EXTENDED_INTRODUCTION.md)
+- [Methods: done, intended, and hygiene](docs/METHODS.md)
 - [Introduction for new readers](docs/INTRODUCTION.md)
 - [Current results and discussion](docs/CURRENT_RESULTS_AND_DISCUSSION.md)
 - [Research status and plan](docs/STATUS_AND_PLAN.md)
