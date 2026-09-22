@@ -2,6 +2,8 @@
 
 This document is written for a reader with **no neuroscience background at all**. If you have ever baked a cake, you already understand the heart of this repository. We will build every idea from scratch, with analogies, and then show exactly how the code and documents in this project fit together. Where we cite scientific literature, we cite **only the references already listed in [docs/INTRODUCTION.md](INTRODUCTION.md)**, by author and year, so that every claim can be checked against the project's own record.
 
+**Concept figure.** The central mechanism this repository examines — delayed outcomes updating earlier events through a fading memory trace — is drawn in [concept_figure.md](concept_figure.md) as an embedded Mermaid diagram. (The release boundary does not allow image files in the tracked tree, so the figure lives as text.) Part 1 below works through the same mechanism as explicit arithmetic.
+
 ## Part 1: What is temporal credit assignment?
 
 Imagine you bake a cake for a party. You follow a long recipe: you cream the butter, sift the flour, add vanilla, bake for thirty minutes, and frost the cake an hour later. At the party, everyone says the cake is delicious. Now you want to know: **which step deserves the credit?** Was it the vanilla, added near the beginning? The exact baking time, in the middle? The frosting, at the end? The praise arrives *after* everything, yet it somehow has to be "sent back in time" to the one step that actually mattered.
@@ -9,6 +11,18 @@ Imagine you bake a cake for a party. You follow a long recipe: you cream the but
 That is the **credit assignment problem**: connecting a later outcome to the earlier action that caused it. Add one more wrinkle — the outcome arrives seconds, minutes, or hours after the action — and you have **temporal credit assignment**: figuring out which *earlier* event, among many separated in time, should be updated when a later reward or punishment finally arrives.
 
 Brains face this constantly. An animal wanders through the world doing dozens of things; then something good or bad happens; and somehow the useful earlier behavior gets strengthened and the useless ones do not. One influential family of theories proposes an **eligibility trace**: the idea that recent neural activity leaves a temporary "sticky note" that can be written on when a later teaching signal arrives, like the recipe step leaving a mark that the eventual praise can highlight (Gerstner et al., 2018 — reference [1] in the introduction). This is a useful theory for linking fast neural events to later consequences, not a settled universal mechanism — a distinction this repository treats carefully.
+
+**The trace, as arithmetic.** An eligibility trace sounds abstract, but it is one multiplication per time step. Suppose each event that occurs sets a synapse's sticky-note number to 1, and each step with no event multiplies the number by 0.5 (it fades by half). Now imagine three actions at steps 1, 2, and 3, and a reward of size 1 arriving at step 5, with the update rule "change in strength = trace × reward":
+
+| Step | Event | Trace after the step | Update if reward arrives now |
+|---|---|---|---|
+| 1 | action A | 1.0 | 1.0 |
+| 2 | action B (A's trace halves) | B: 1.0, A: 0.5 | — |
+| 3 | action C (older traces halve) | C: 1.0, B: 0.5, A: 0.25 | — |
+| 4 | (nothing) | C: 0.5, B: 0.25, A: 0.125 | — |
+| 5 | reward arrives | traces unchanged | C gets 0.5, B gets 0.25, A gets 0.125 |
+
+That is the entire mechanism: one halving per step, one multiplication at the end. The delayed praise automatically lands mostly on the frosting (recent) and barely on the vanilla (distant), with no clock-watching required — the fading numbers do the timekeeping. Everything called "eligibility" in the literature is a variation on this table: a different fade factor, a different update rule, or a trace carried by a synapse instead of a sticky note.
 
 ```mermaid
 flowchart LR
