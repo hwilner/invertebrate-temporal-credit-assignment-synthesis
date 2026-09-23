@@ -80,7 +80,7 @@ where $m$ is the slot's current content, $\delta$ is the transition rule, and th
 
 **Road 3: statistical mechanics by counting.** Why does recency dominate credit? Because recent events have *more chances* to still be marked when the outcome lands. Count the ways: if a mark survives each step with probability one-half, then an event 1 step old survives in 1 of 2 worlds, an event 2 steps old in 1 of 4, an event 3 steps old in 1 of 8. Across many repetitions, the tally of "still marked at outcome time" is 4 : 2 : 1 for ages 1, 2, 3 — recency advantage is a multiplicity count, not a force pulling toward the present. Formally, survival is a power of the per-step chance,
 
-$$P(\text{mark of age } k \text{ survives}) = \left(\tfrac{1}{2}\right)^k, \qquad \text{so} \quad \tfrac12,\ \tfrac14,\ \tfrac18 \ \text{for } k = 1, 2, 3$$
+$$P(\text{mark of age } k \text{ survives}) = \left(\tfrac{1}{2}\right)^k, \qquad \text{so} \quad \tfrac12,\ \tfrac14,\ \tfrac18\ \text{for } k = 1, 2, 3$$
 
 where each extra step of age multiplies the survival chance by one-half — the tallies 2, 4, 8 in the denominators are exactly the "worlds" counted above. *What this buys you:* an interpretation of decay as population statistics over repeated trials. *What it costs you:* it is silent about any single trial, where an old mark may happen to survive.
 
@@ -218,6 +218,26 @@ where $\binom{6}{3}$ counts the possible groupings (the numerator multiplies the
 ## References
 
 All literature pointers above refer to the numbered reference list in [docs/INTRODUCTION.md](INTRODUCTION.md), which is the repository's single citable source list. The entries used here are [1] (eligibility traces), [2] (conditioning at identified sea-slug synapses), [3] (reinforcement signaling in the fruit fly), [4, 5, 13] (evidence-synthesis handbook chapters), [6] (critical appraisal of preclinical syntheses), [7] (a review of invertebrate associative learning), [8] (light-addressable reinforcement circuitry), [9] (mushroom-body architecture), [10] (learning-related plasticity in the fly), [11] (synthesis without meta-analysis), [12] (systematic-review reporting framework), and [14, 15] (animal-study bias-assessment and reporting tools). No citations beyond that list are made in this document.
+
+## Learn more (verified links)
+
+Every link below was fetched and verified at the time of writing.
+
+**Credit assignment and eligibility traces**
+- [Credit assignment problem](https://en.wikipedia.org/wiki/Credit_assignment_problem) — frames how learning systems route outcomes back to the earlier choices that caused them, the cake-credit problem of Part 1 in its standard form.
+- [Temporal difference learning](https://en.wikipedia.org/wiki/Temporal_difference_learning) — explains TD learning and its trace-decay parameter, the canonical algorithmic home of the eligibility-trace idea discussed throughout this document.
+
+**Operant and associative learning**
+- [Operant conditioning](https://en.wikipedia.org/wiki/Operant_conditioning) — describes how behavior followed by consequences is strengthened or weakened, the learning paradigm at the center of the sea-slug and fruit-fly work reviewed here.
+
+**The model organisms**
+- [Aplysia californica](https://en.wikipedia.org/wiki/Aplysia_californica) — introduces the sea slug with giant, identified neurons, explaining why it serves as the "clock with huge gears" of Part 2.
+
+**Evidence synthesis and meta-analysis**
+- [Meta-analysis](https://en.wikipedia.org/wiki/Meta-analysis) — lays out what quantitative pooling of studies requires, clarifying why this project refused to pool records without a pre-specified bridge.
+
+**Game theory and fair credit**
+- [Shapley value](https://en.wikipedia.org/wiki/Shapley_value) — gives the classic fair-division rule for coalition games, the formal version of the "blame allocation" road to credit assignment.
 
 ## Choosing your road
 
