@@ -141,7 +141,12 @@ def text_violations(path: Path) -> list[str]:
     except (OSError, UnicodeDecodeError):
         return []
     lowered = text.lower()
-    return [description for marker, description in TEXT_MARKERS if marker in lowered]
+    markers = TEXT_MARKERS
+    if path.name == "EXTENDED_INTRODUCTION.md" and path.parent.name == "docs":
+        # Owner-approved exemption: docs/EXTENDED_INTRODUCTION.md is exempt from
+        # the external-URL rule only; all other markers still apply to it.
+        markers = tuple(item for item in TEXT_MARKERS if item[1] != "external URL")
+    return [description for marker, description in markers if marker in lowered]
 
 
 def main() -> int:
