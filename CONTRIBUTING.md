@@ -6,6 +6,10 @@ Contributions are welcome to this independent research repository. Proposed chan
 
 Do not add research data, derived outputs, figures, downloads, archives, external source material or metadata, access logs, notebooks, or cached files. Do not add empirical findings, numerical research values, source-specific outcome statements, personal contact details, or statements that imply a venue or release decision. The complete boundary is described in [`docs/RELEASE_BOUNDARY.md`](docs/RELEASE_BOUNDARY.md).
 
+## Project task workflow
+
+Each atomic task is tracked by a GitHub issue and its matching Project card. When a pull request fully addresses one of those tasks, include `Fixes #<issue-number>`, `Closes #<issue-number>`, or `Resolves #<issue-number>` in the pull-request description. Use a closing keyword only for work that is genuinely complete; use ordinary discussion or a non-closing reference for proposals and partial work. This link gives reviewers a visible relationship between the change and its task, and supports the documented Project-status automation when it is enabled.
+
 ## Code and tests
 
 Retained utilities must be deterministic, data-free, and free of filesystem access to research-data or output locations. Use Google-style docstrings for public callables, covering a summary plus `Args`, `Returns`, and `Raises` when applicable. Add concise explanatory comments only where they clarify a non-obvious implementation choice. Tests must use synthetic inputs and must not create files in repository data or output paths.
