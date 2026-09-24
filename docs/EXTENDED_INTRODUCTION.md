@@ -138,7 +138,7 @@ flowchart TD
 **Road 1: set theory.** Each study's measurement is a set of situations in which its number means something definite: study A measures {teaspoons per cake, home oven, wheat flour}, study B measures {drops per batch, commercial oven, rye flour}. A bridge exists only if the **intersection** of these sets is non-empty — some shared situation where both numbers are defined. Worked example: A's scale is defined for {cakes 1–50 g sugar}, B's scale for {cakes 40–80 g sugar}; the intersection is {40–50 g}, non-empty, so a bridge restricted to that band exists; if A were {1–30} and B {40–80}, the intersection is empty and *no* honest bridge exists. The project's comparability assessment is exactly this membership test, done with care. Formally,
 
 ```math
-\text{bridge exists} \iff A \cap B \neq \emptyset, \qquad \{1\text{–}50\} \cap \{40\text{–}80\} = \{40\text{–}50\} \neq \emptyset
+\text{bridge exists} \iff A \cap B \neq \emptyset, \qquad \{1\text{-}50\} \cap \{40\text{-}80\} = \{40\text{–}50\} \neq \emptyset
 ```
 
 where $`A \cap B`$ is the intersection (the situations both scales cover), $`\emptyset`$ is the empty set, and $`\iff`$ reads "exactly when" — the worked example lands in the non-empty case, the {1–30}/{40–80} variant in the empty one. *What this buys you:* a binary, auditable verdict — comparable here, not there. *What it costs you:* sets are silent about *how good* the comparison is inside the intersection.
