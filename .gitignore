@@ -81,3 +81,7 @@ env/
 *.tmp
 *.bak
 *~
+
+# Generated scientific illustrations that are part of the public documentation
+!docs/figures/
+!docs/figures/*.png
