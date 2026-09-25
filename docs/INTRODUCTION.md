@@ -2,6 +2,10 @@
 
 > **Start here — scope.** The first part of this page teaches general background: how scientists use words such as learning, neurons, and comparison. It is not a report of new findings. The repository's own, narrower result is that the available source-specific records do **not** yet have a comparison rule set in advance that would justify combining them. The cross-system synthesis is therefore **unresolved**, not positive or negative. Its timing helper works only on caller-supplied **synthetic** sequences and is arithmetic, not a biological test or an empirical estimate.
 
+![Concept figure: records from three invertebrate systems are compared under one pre-registered rule set; because no common rule exists, the synthesis remains unresolved](figures/01-concept-schematic.png)
+
+*Figure 1: Records from three invertebrate systems are compared under one pre-registered rule set; because no common rule exists, the synthesis remains unresolved. (Editable Mermaid source: [figures/concept_figure.md](figures/concept_figure.md).)*
+
 ## Begin with the everyday question
 
 **Learning** is a change that follows experience. One broad kind is **associative learning**: an organism comes to relate events that occur together, or to relate an action to something that happens afterward. **Classical conditioning** is one example, in which one event comes to predict another. **Reinforcement** is another broad idea: an outcome or signal can affect how likely an action or response is to occur again. These are useful ways to describe learning questions; they do not identify one universal biological explanation.
