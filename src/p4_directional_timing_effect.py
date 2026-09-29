@@ -21,10 +21,12 @@ def _finite_mean(values: Sequence[float], label: str) -> float:
         label: Input label included in a validation error.
 
     Returns:
-        Arithmetic mean of ``values`` as a float.
+        Finite arithmetic mean of ``values`` as a ``float``.
 
     Raises:
-        ValueError: If ``values`` is empty, non-numeric, or includes a non-finite value.
+        ValueError: If ``values`` is empty.
+        ValueError: If any entry of ``values`` is non-numeric.
+        ValueError: If any entry of ``values`` is non-finite (NaN or infinite).
     """
     if not values:
         raise ValueError(f"{label} must contain at least one timing value")
