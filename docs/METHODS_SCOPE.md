@@ -6,13 +6,13 @@ Temporal credit assignment concerns how a system could relate events separated i
 
 ## Data-free timing contrast
 
-The retained utility computes the difference between two mean pre/post changes supplied by a caller:
+The retained utility computes a four-sequence mean-change contrast: the difference between two mean pre/post changes, all from caller-supplied synthetic numeric sequences:
 
 ```text
 mean(first_post) - mean(first_pre) - (mean(comparison_post) - mean(comparison_pre))
 ```
 
-The formula is an arithmetic reference for synthetic inputs. Its sign is determined by the caller’s convention and has no biological interpretation within this repository. The utility performs input validation but no inference, estimation, source selection, data loading, or file access.
+The formula is an arithmetic reference for those synthetic inputs. Its sign is determined by the caller’s convention and has no biological interpretation within this repository. The utility accepts only caller-supplied sequences and performs input validation but no inference, estimation, source selection, data loading, or file access.
 
 ## Interpretation boundary
 
