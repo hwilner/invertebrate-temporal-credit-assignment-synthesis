@@ -36,11 +36,11 @@ Keep documentation accurate and conservative. Describe scope, assumptions, and e
 
 ## Local checks
 
-From a Git checkout, run the tracked-file boundary scanner and the synthetic standard-library test suite before sharing a change:
+From a Git checkout, run the two documented local checks before sharing a change:
 
 ```bash
 python3 tools/check_release_boundary.py
 python3 -B -m unittest discover -s tests -v
 ```
 
-The scanner intentionally reads only Git-tracked paths and tracked text. It cannot validate untracked local material; keep that material outside this tree.
+The first command is the tracked-file boundary check: it scans only Git-tracked paths and tracked text for prohibited locations, file types, and clear boundary markers. The second command is the synthetic test suite: standard-library unit tests that use invented in-memory values only and create no files. Because the scanner reads tracked content only, it cannot validate untracked local material; keep untracked material outside this tree.
