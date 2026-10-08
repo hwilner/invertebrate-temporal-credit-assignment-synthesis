@@ -4,6 +4,8 @@
 
 The cross-system synthesis remains **unresolved**. The available records were reviewed for whether they could be compared using a shared rule established before inspection. They cannot currently be combined because no such bridge was specified. A bridge would state what is being compared, how it is measured, and how each record maps to the same benchmark.
 
+"Unresolved" is a statement about comparability, not about biology: it does not show that a cross-system relationship is absent, only that the available material offers no fair, pre-specified way to evaluate one. Evidence of absence would require a justified common comparison that the present records cannot support.
+
 The supportive result at this stage is methodological rather than biological: the review makes the comparison boundary clear. Each record must remain in its own context. The non-supportive result is that the present records do not support a pooled effect, a common benchmark, a ranking, cross-system translation, or a shared-mechanism conclusion.
 
 The available records also do not point in a single stable direction. They include directionally suggestive but unstable evidence, evidence that remains inconclusive across alternative reference choices, a bounded supportive encoding observation, and a separate non-supportive observational route. These descriptions are retained as source-specific status statements, not converted into a shared result.
