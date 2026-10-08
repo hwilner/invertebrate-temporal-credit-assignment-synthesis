@@ -22,7 +22,7 @@ For a reader outside the field, the key point is simple: evidence from different
 
 This work does not show a pooled effect or a common benchmark. It does not establish that any record is stronger or weaker than another, or that a result in one system translates to another. It does not identify a shared biological mechanism, demonstrate causality, or settle the broader temporal-credit-assignment question.
 
-No external bridge material has been selected, screened, or analysed for this synthesis. No pooled analysis, ranking, cross-system translation, or shared-mechanism test has been run. The synthetic timing helper does not change any of these limits.
+No external bridge material has been selected, screened, or analysed for this synthesis. No pooled analysis, ranking, cross-system translation, or shared-mechanism test has been run. The synthetic timing helper does not change any of these limits: it is a data-free arithmetic reference computed from caller-supplied invented sequences, not an empirical biological test, and it supplies no evidence for or against any of the excluded interpretations above.
 
 ## Discussion and Future Testing
 
