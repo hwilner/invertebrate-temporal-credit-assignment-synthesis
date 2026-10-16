@@ -18,4 +18,4 @@ No external bridge source has been selected, screened, or analysed for the synth
 
 ## Next research decision
 
-A future synthesis requires a prospectively specified bridge before source-specific results are inspected. Public contributions are welcome for data-free methods, synthetic tests, documentation, and review of comparability assumptions.
+A future synthesis requires a prospectively specified bridge before source-specific results are inspected; no external bridge source has been selected, screened, or analysed. Public contributions remain limited to data-free methods, synthetic tests, documentation, and comparability review.
